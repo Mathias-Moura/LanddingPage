@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/pedido-salgado.css">
+    <link rel="icon" href="/img/logo-maravilha.png" type="image/png">
+    <title>Pedido de Salgados - Maravilhas da Cris</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">M<span>aravilhas da </span>C<span>ris</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/HTML/index.html">Home</a></li>
+                <li class="nav-item"><a href="https://www.instagram.com/maravilhas_da_criis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order">
+            <h2 class="text-h2">Realizar encomenda</h2>
+            <form id="orderForm" action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="product">Produto:</label>
+                <select id="product" name="product" required>
+                    <option value="">Selecione um produto</option>
+                    <option value="Coxinha">Cento de Salgado</option>
+                    <option value="Kit-Festa">Kit-Festa</option>
+                    <option value="Bolo-Confeitado">Bolo confeitado</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select><br>
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required><br>
+                <button type="submit">Enviar Pedido</button>
+            </form>
+            <!-- Campo para mostrar os detalhes do pedido e o link do WhatsApp -->
+            <div id="pedidoInfo" style="display: none;">
+                <h3>Detalhes do Pedido:</h3>
+                <textarea id="pedidoText" rows="10" cols="50" readonly></textarea><br>
+                <a id="linkWhatsApp" href="" target="_blank">Clique aqui para enviar seu pedido pelo WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="/JavaScript/pedido-salgado.js"></script>
+</body>
+</html>
