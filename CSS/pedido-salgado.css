@@ -16,12 +16,23 @@
     --dark:#1e1c2a;
 }
 body{
+    height: 100vh;
+    max-width: 100%;
     color: var(--dark);
     background: var(--white);
 }
-
-/* Estilos para o cabeçalho */
-.navigation{
+header{
+    max-width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+/* Estilos para o cabeçalho 
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,18 +70,19 @@ body{
     display: none;
     cursor: pointer;
 }
-
+*/
+/*
 .bar {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: var(--dark); /* Cor dos ícones de menu */
+    background-color: var(--dark); 
     margin-bottom: 5px;
 }
-
+*/
 /* Estilos para telas menores */
 @media (max-width: 768px) {
-    .nav-menu {
+   /* .nav-menu {
         display: none;
     }
 
@@ -92,12 +104,14 @@ body{
 
     .nav-item {
         margin: 10px 0;
-    }
+    }*/
 }
 
 /* Estilos específicos para o formulário */
 .order {
-    margin: 120px auto 50px; /* Ajuste da margem para evitar sobreposição com o cabeçalho */
+   /* margin: 120px auto 50px; */
+   
+   
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
